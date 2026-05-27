@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 4</title>
+</head>
+<body>
+    <h1>Cửa hàng KNG</h1> 
+
+    <!-- "../"" -> di chuyển đến trang thư mục chứa file hiện tại -->
+    <!-- "./"" -> di chuyển ra ngoài thư mục chứa file hiện tại 1 cấp -->
+    <!-- <ol>
+        <li><a href="./index2.html">Trang chủ</a></li>
+        <li><a href="./page/gioi-thieu.html" target="_blank">Giới thiệu</a></li>
+        <li>
+            Sản phẩm
+            <ol>
+                <li>Laptop
+                    <ul>
+                        <li><a href="./products/laptop/asus.html" target="_blank">Asus</a></li>
+                        <li><a href="./products/laptop/mac-pro.html" target="_blank">Mac-pro</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Điện thoại
+                    <ul>
+                        <li><a href="./products/phone/iphone.html" target="_blank">Iphone</a></li>
+                        <li><a href="./products/phone/sangsung-j7.html" target="_blank">Samsung-J7</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li><a href="./page/lien-he.html" target="_blank">Liên hệ</a></li>
+
+    </ol> -->
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KNG Store</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #f4f7fb;
+        color: #222;
+      }
+
+      /* ===== MENU ===== */
+      nav {
+        background-color: #0d1117;
+        padding: 15px 40px;
+        position: sticky;
+        top: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #3b82f6;
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        height: 500px;
+        background: linear-gradient(to right, #0f172a, #2563eb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
+
+      .hero-content p {
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
+
+      .hero-content a {
+        display: inline-block;
+        padding: 15px 35px;
+        background-color: white;
+        color: #2563eb;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .hero-content a:hover {
+        transform: translateY(-5px);
+      }
+
+      /* ===== SECTION ===== */
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 60px auto;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+        color: #2563eb;
+      }
+
+      /* ===== PRODUCTS ===== */
+      .products {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+
+      .product-card {
+        flex: 1;
+        min-width: 250px;
+        background-color: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        text-align: center;
+      }
+
+      .product-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .product-card h3 {
+        margin-bottom: 15px;
+        color: #2563eb;
+      }
+
+      .product-card p {
+        margin-bottom: 20px;
+        line-height: 1.7;
+      }
+
+      .product-card a {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      .product-card a:hover {
+        background-color: #1d4ed8;
+      }
+
+      /* ===== ABOUT ===== */
+      .about {
+        background-color: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .about p {
+        line-height: 1.8;
+        margin-top: 20px;
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        background-color: #0d1117;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== MENU ===== -->
+    <nav>
+      <ul>
+        <li><a href="index2.html">Trang chủ</a></li>
+
+        <li><a href="page/gioi-thieu.html">Giới thiệu</a></li>
+
+        <li><a href="page/lien-he.html">Liên hệ</a></li>
+
+        <li>
+          <a href="products/laptop/asus.html">ASUS ROG</a>
+        </li>
+
+        <li>
+          <a href="products/laptop/mac-pro.html">MacBook Pro</a>
+        </li>
+
+        <li>
+          <a href="products/phone/iphone.html">iPhone</a>
+        </li>
+
+        <li>
+          <a href="products/phone/samsung.html">Samsung</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>KNG Store</h1>
+
+        <p>Cửa hàng công nghệ hiện đại - Chính hãng - Giá tốt</p>
+
+        <a href="products/laptop/asus.html">Khám phá ngay</a>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <div class="container">
+      <h2 class="section-title">Sản phẩm nổi bật</h2>
+
+      <div class="products">
+        <!-- ASUS -->
+        <div class="product-card">
+          <h3>ASUS ROG Strix</h3>
+
+          <p>
+            Laptop gaming mạnh mẽ với RTX 4060 và hệ thống tản nhiệt hiện đại.
+          </p>
+
+          <a href="products/laptop/asus.html">Xem chi tiết</a>
+        </div>
+
+        <!-- MACBOOK -->
+        <div class="product-card">
+          <h3>MacBook Pro M3</h3>
+
+          <p>
+            Thiết kế sang trọng cùng chip Apple M3 Pro hiệu năng cực cao.
+          </p>
+
+          <a href="products/laptop/mac-pro.html">Xem chi tiết</a>
+        </div>
+
+        <!-- IPHONE -->
+        <div class="product-card">
+          <h3>iPhone 15 Pro Max</h3>
+
+          <p>
+            Smartphone cao cấp với camera zoom 5X và chip A17 Pro mạnh mẽ.
+          </p>
+
+          <a href="products/phone/iphone.html">Xem chi tiết</a>
+        </div>
+
+        <!-- SAMSUNG -->
+        <div class="product-card">
+          <h3>Samsung Galaxy S25 Ultra</h3>
+
+          <p>
+            Màn hình Dynamic AMOLED siêu đẹp cùng camera AI hiện đại.
+          </p>
+
+          <a href="products/phone/samsung.html">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <div class="container">
+      <div class="about">
+        <h2 class="section-title">Về KNG Store</h2>
+
+        <p>
+          KNG Store chuyên cung cấp các sản phẩm công nghệ chính hãng như
+          laptop, điện thoại và phụ kiện cao cấp. Chúng tôi luôn đặt chất lượng
+          sản phẩm và trải nghiệm khách hàng lên hàng đầu.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>© 2026 KNG Store | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
+
+    
+</body>
+</html>
