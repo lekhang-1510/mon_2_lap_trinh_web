@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buổi 6</title>
+    <style>
+    /* CSS Selector: bộ chọn 
+    #heading: tác động đến phần tử có id là heading*/
+    
+    #heading{
+        color: blue;
+    }
+    </style>
+
+
+
+
+  </head>
+  <body>
+    <h1>Buổi 6: TABLE + CSS</h1>
+    <h2 id="heading">CSS: demon 2</h2>
+    <h2>CSS: demon 3</h2>
+    <h2>CSS: demon 4</h2>
+    <h2>CSS: demon 5</h2>
+    <hr />
+    <br />
+
+    <p><strong>BẢNG THƯỜNG</strong></p>
+    <table border="1" style="width: 100%" cellspacing="0">
+      <!-- Dòng 1 -->
+      <tr>
+        <td>Mã SV</td>
+        <td>Học và tên</td>
+        <td>Điểm LT</td>
+        <td>Điểm TH</td>
+      </tr>
+
+      <!-- Dòng 2 -->
+      <tr>
+        <td>SV 001</td>
+        <td>Dương Nguyễn Phú Cường</td>
+        <td>8</td>
+        <td>10</td>
+      </tr>
+
+      <!-- Dòng 3 -->
+      <tr>
+        <td>SV 002</td>
+        <td>Trần Thị B</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+
+      <!-- Dòng 4 -->
+      <tr>
+        <td>SV 003</td>
+        <td>Nguyễn Văn C</td>
+        <td>9</td>
+        <td>5</td>
+      </tr>
+
+      <!-- Dòng 5 -->
+      <tr>
+        <td>SV 004</td>
+        <td>Nguyễn Thị Hồng D</td>
+        <td>9</td>
+        <td>5</td>
+      </tr>
+
+      <!-- Dòng 6 -->
+      <tr>
+        <td>SV 005</td>
+        <td>Lê Văn A</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+    </table>
+    <br />
+
+    <p><strong>BẢNG GỘP (DÒNG / CỘT)</strong></p>
+    <table border="1" style="width: 100%" cellspacing="0">
+      <!-- Dòng 1 -->
+      <!-- Đầu bảng: thead -->
+      <thead>
+        <tr>
+          <th rowspan="2">STT</th>
+          <th rowspan="2">Họ và tên</th>
+          <th colspan="2">Điểm số</th>
+        </tr>
+
+        <!-- Dòng 2 -->
+        <tr>
+          <th>Lý thuyết</th>
+          <th>Thực thành</th>
+        </tr>
+      </thead>
+
+      <!-- BODY Bảng: tbbody -->
+      <tbdody
+        ><!-- Dòng 3 -->
+        <tr>
+          <td>1</td>
+          <td>Nguyễn Văn A</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+
+        <!-- Dòng 4 -->
+        <tr>
+          <td>2</td>
+          <td>Lê Văn B</td>
+          <td>8</td>
+          <td>6</td>
+        </tr>
+
+        <!-- Dòng 5 -->
+        <tr>
+          <td>3</td>
+          <td>Nguyễn Thị C</td>
+          <td>5</td>
+          <td>9</td>
+        </tr>
+
+        <!-- Dòng 6 -->
+        <tr>
+          <td>4</td>
+          <td>Trần Thị D</td>
+          <td>6</td>
+          <td>7</td>
+        </tr></tbdody
+      >
+
+      <!-- Cuối bảng: tfoot -->
+      <tfoot>
+        <tr>
+          <td colspan="3">Tổng số sinh viên</td>
+          <td>4</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <hr />
+
+    <!-- Cách dùng CSS trong html
+    Cách 1 (inline style): Viết CSS trực tiếp trong HTML
+    Cách 2 (internal CSS): Viết CSS trong thẻ head
+    Cách 3 (external CSS): Viết CSS trong file khác -->
+
+    <h2 style="color: red">CSS: demo 1</h2>
+    <p
+      style="
+        color: blueviolet;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+      eveniet? Consectetur culpa at itaque aspernatur distinctio sapiente
+      incidunt corporis mollitia expedita doloremque. Recusandae quae corporis,
+      voluptate illum beatae odio. Quas?
+    </p>
+  </body>
+</html>
